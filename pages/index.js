@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={[styles.main]}>
         <h1 className={styles.title}>
-          Welcome to Marcio's portfolio
+          Marcio's portfolio
         </h1>
         <hr className={['container']} />
         <div className={['container']}>
