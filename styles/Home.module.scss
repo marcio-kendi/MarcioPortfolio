@@ -115,7 +115,7 @@ $primary-color: #992cc4;
     color: $primary-color;
   }
   :after {
-    display:block;
+    display:flex;
     content: '';
     border-bottom: 2px solid $primary-color;  
     transform: scaleX(0);  
