@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button from '/components/Button.js'
 import styles from '../styles/Home.module.scss'
 import Techskills from './menu/TechnicalSkills.js'
-import Title from '/components/Titzle.js'
+import Title from '/components/Title.js'
 
 export default function Home() {
   return (
