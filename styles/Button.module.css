@@ -1,5 +1,8 @@
+/* $primary-color: #992cc4; */
 
-.error {
-  color: white;
-  background-color: red;
+.btn {
+  cursor: pointer;
+  /* :hover {
+    color: $primary-color;
+  } */
 }

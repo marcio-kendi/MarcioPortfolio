@@ -1,12 +1,11 @@
-import styles from '../styles/Button.module.css'
+import styles from '../styles/Home.module.scss'
 
-export function Button() {
+export function Button({menuName, onclick}) {
   return (
-    <button
-      type="button"
-      className={styles.error}
-    >
-      Destroy
-    </button>
+  <span className={['col-3 text-center d-flex justify-content-center']}>
+    <span className={styles.btn} onClick={onclick}>
+      <h3>{menuName}</h3>
+    </span>
+  </span>
   )
 }
