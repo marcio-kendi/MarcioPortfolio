@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.scss'
 import React, { Component } from 'react';
-import Modal from '../components/Modal/Modal.js'
+import Modal from './Modal/Modal.js'
 
 export default class Button extends Component {
   state = {

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Button from '../components/Button.js'
+import Button from '/components/Button.js'
 import styles from '../styles/Home.module.scss'
-import Title from '../components/Title.js'
-import Techskills from '../pages/menu/TechnicalSkills.js'
+import Techskills from './menu/TechnicalSkills.js'
+import Title from '/components/Title.js'
 
 export default function Home() {
   return (
