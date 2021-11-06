@@ -6,6 +6,7 @@ class Techskills extends Component {
     return (
     <div className={styles.menu}>
         <h2>Technical Skills</h2>
+        <hr/>
         <ul>
             <li>Frontend: HTML5, CSS (including transitions and animation), JavaScript</li>
             <li>Backend: C# .NET, C++, PHP, Node</li>

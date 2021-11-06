@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Button from '/components/Button.js'
 import styles from '../styles/Home.module.scss'
 import Techskills from './menu/TechnicalSkills.js'
+import WorkExp from './menu/WorkExperience.js'
+import Education from './menu/Education.js'
+import Hobbies from './menu/Hobbies.js'
 import Title from '/components/Title.js'
 
 export default function Home() {
@@ -18,15 +21,15 @@ export default function Home() {
         <hr className={['container']}/>
         <div className={['container']}>
           <div className={'row'}>
-            <Button menuName='Technical Skills' modaltitle='Test modal1' selectedmenu={<Techskills />}/>
-            <Button menuName='Work experience' modaltitle='Test modal2'/>
-            <Button menuName='Education' modaltitle='Test modal3'/>
-            <Button menuName='Hobbies' modaltitle='Test modal4'/>  
+            <Button menuName='Technical Skills' selectedmenu={<Techskills />} />
+            <Button menuName='Work experience' selectedmenu={<WorkExp />} />
+            <Button menuName='Education' selectedmenu={<Education />} />
+            <Button menuName='Hobbies' selectedmenu={<Hobbies />}/>  
           </div>
         </div>
       </main>
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -35,7 +38,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </a> */}
       </footer>
     </div>
   )
