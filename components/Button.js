@@ -14,7 +14,7 @@ export default class Button extends Component {
 
   render() {
     return (
-      <span className={['col-3 text-center']}>
+      <span className={['col-12 col-md-3 mt-md-0 mt-3 text-center']}>
         <span className={styles.btn} onClick={e => {
             this.showModal(e);
           }}>
