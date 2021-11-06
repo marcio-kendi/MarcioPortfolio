@@ -13,7 +13,7 @@ class WorkExp extends Component {
           <li>Working closely with Designers and Creative Team to bring the best job solution</li>
           <li>Producing software according to approved design.</li>
           <li>Maintaining and supporting multiple projects.</li>
-        </ul>
+        </ul><br/>
         <h3>Key Achievements</h3>
         <ul>
           <li>Complete all phases of software development life cycle including analysis, estimation, design, development, testing and support</li>

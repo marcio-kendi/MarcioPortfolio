@@ -7,13 +7,40 @@ class Techskills extends Component {
     <div className={styles.menu}>
         <h2>Technical Skills</h2>
         <hr/>
-        <ul>
-            <li>Frontend: HTML5, CSS (including transitions and animation), JavaScript</li>
-            <li>Backend: C# .NET, C++, PHP, Node</li>
-            <li>Libraries: JQuery, Bootstrap, Greensock, SASS, React</li>
-            <li>Tools: npm, Git, Webpack</li>
-            <li>Extras: EMV Transaction, EFTPOS, Dynamic Digital Billboard</li>
-        </ul>
+        <div className="pb-3">
+          <h4>Frontend</h4>
+          <ul>
+              <li>- HTML5</li>
+              <li>- CSS (including transitions and animation)</li>
+              <li>- JavaScript</li>
+          </ul>
+        </div>
+        <div className="pb-3">
+          <h4>Libraries</h4>
+          <ul>
+              <li>- JQuery</li>
+              <li>- Bootstrap</li>
+              <li>- Greensock</li>
+              <li>- SASS</li>
+              <li>- React</li>
+          </ul>
+        </div>
+        <div className="pb-3">
+          <h4>Tools</h4>
+          <ul>
+              <li>- npm</li>
+              <li>- Git</li>
+              <li>- Webpack</li>
+          </ul>
+        </div>
+        <div className="pb-3">
+          <h4>Extras</h4>
+          <ul>
+              <li>- EMV Transaction</li>
+              <li>- EFTPOS</li>
+              <li>- Dynamic Digital Billboard</li>
+          </ul>
+        </div>
     </div>
     )
   }
