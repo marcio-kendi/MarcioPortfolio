@@ -1,26 +1,27 @@
 import React from "react";
 import styles from '../../styles/Home.module.scss'
-import PropTypes from "prop-types";
+import {useSpring, animated} from 'react-spring'
 
-export default class Modal extends React.Component {
-  onClose = e => {
-    this.props.onClose && this.props.onClose(e);
-    };
-  render() {
-    if (!this.props.show) {
-      return null;
+export const Modal = ({showModal, setShowModal, selectedMenu}) => {
+
+  const animation = useSpring ({
+    config: {
+      duration: 250
+    },
+    opacity: showModal ?  1 : 0
+  })
+
+  return <>{
+      showModal ? 
+        <animated.div style={animation}>
+          <div className={styles.modal} >
+            {selectedMenu}
+            <button className="toggle-button" onClick={() => setShowModal(prev => !prev)} >
+              close
+            </button>
+          </div>
+      </animated.div> 
+      : null
     }
-    return (
-      <div className={styles.modal} id="modal">
-        {this.props.selectedMenu}
-        <button className="toggle-button" onClick={this.onClose}>
-          close
-        </button>
-      </div>
-    );
-  }
-}
-Modal.propTypes = {
-  onClose: PropTypes.func.isRequired,
-  show: PropTypes.bool.isRequired
+  </>
 }
