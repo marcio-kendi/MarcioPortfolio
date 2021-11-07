@@ -1,16 +1,21 @@
 import styles from '../styles/Home.module.scss'
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { Modal } from './modal/Modal.js'
 
-export default class Button extends Component {
-  render() {
-    return (
-      <span className={['col-12 col-md-3 mt-md-0 mt-3 text-center']}>
-        <span className={styles.btn} onClick={this.props.onclick} >
-          <h3>{this.props.menuName}</h3>
-        </span>
-        <Modal showModal={this.props.showmodal} setShowModal={this.props.setshowmodal} selectedMenu={this.props.selectedmenu} />
+const Button = ({menuName, selectedmenu}) => {
+  const [showModal, setShowModal] = useState(false);
+  
+  const openModal = () => {     
+      setShowModal(prev => !prev);
+  };
+  
+  return (
+    <span className={['col-12 col-md-3 mt-md-0 mt-3 text-center']}>
+      <span className={styles.btn} onClick={openModal} >
+        <h3>{menuName}</h3>
       </span>
-    )
-  }
+      <Modal showModal={showModal} setShowModal={setShowModal} onClick={openModal} selectedMenu={selectedmenu} />
+    </span>
+  )
 }
+export default Button;

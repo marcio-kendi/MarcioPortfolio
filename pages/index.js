@@ -1,25 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Button from '/components/Button.js'
 import styles from '../styles/Home.module.scss'
 import Techskills from './menu/TechnicalSkills.js'
 import WorkExp from './menu/WorkExperience.js'
 import Education from './menu/Education.js'
 import Hobbies from './menu/Hobbies.js'
 import Title from '/components/Title.js'
-import React, { Component, useState, useRef } from 'react'
+import Button from '../components/Button.js'
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
-  // const [showModal, setShowModal] = useState(false);
-  // const [showModal, setShowModal] = useState(false);
-  // const [showModal, setShowModal] = useState(false);
-  const modalRef = useRef();
-  
-  const openModal = () => {
-      setShowModal(prev => !prev);
-  }
-
   return (
     <div className='container-fluid'>
       <Head>
@@ -32,10 +21,10 @@ export default function Home() {
         <hr className={['container']}/>
         <div className={['container']}>
           <div className={'row'}>
-            <Button menuName='Technical Skills' selectedmenu={<Techskills />} showmodal={showModal} setshowmodal={setShowModal} onclick={openModal} />
-            <Button menuName='Work experience' selectedmenu={<WorkExp />} showmodal={showModal} setshowmodal={setShowModal} onclick={openModal}/>
-            <Button menuName='Education' selectedmenu={<Education />} showmodal={showModal} setshowmodal={setShowModal} onclick={openModal} />
-            <Button menuName='Hobbies' selectedmenu={<Hobbies />} showmodal={showModal} setshowmodal={setShowModal} onclick={openModal}/>
+            <Button menuName='Technical Skills' selectedmenu={<Techskills />} />
+            <Button menuName='Work experience' selectedmenu={<WorkExp />} />
+            <Button menuName='Education' selectedmenu={<Education />} />
+            <Button menuName='Hobbies' selectedmenu={<Hobbies />} />
           </div>
         </div>
       </main>
