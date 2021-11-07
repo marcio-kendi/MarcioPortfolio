@@ -1,14 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import Techskills from './menu/TechnicalSkills.js'
-import WorkExp from './menu/WorkExperience.js'
-import Education from './menu/Education.js'
-import Hobbies from './menu/Hobbies.js'
-import Title from '/components/Title.js'
+import Techskills from '../content/TechnicalSkills.js'
+import WorkExp from '../content/WorkExperience.js'
+import Education from '../content/Education.js'
+import Hobbies from '../content/Hobbies.js'
+import Title from '../components/Title.js'
 import Button from '../components/Button.js'
+import Menu from '../components/Menu.js'
 
 export default function Home() {
+  
   return (
     <div className='container-fluid'>
       <Head>
@@ -18,14 +20,9 @@ export default function Home() {
       </Head>
       <main className={[styles.main]}>
         <Title tname="Marcio's portfolio" />
-        <hr className={['container']}/>
+        <hr className={['container']} />
         <div className={['container']}>
-          <div className={'row'}>
-            <Button menuName='Technical Skills' selectedmenu={<Techskills />} />
-            <Button menuName='Work experience' selectedmenu={<WorkExp />} />
-            <Button menuName='Education' selectedmenu={<Education />} />
-            <Button menuName='Hobbies' selectedmenu={<Hobbies />} />
-          </div>
+          <Menu />
         </div>
       </main>
       <footer className={styles.footer}>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from '../../styles/Home.module.scss'
 import {useSpring, animated} from 'react-spring'
 
-export const Modal = ({showModal, setShowModal, selectedMenu}) => {
+export const Modal = ({showModal, children, closeModal}) => {
 
   const animation = useSpring ({
     config: {
@@ -15,12 +15,9 @@ export const Modal = ({showModal, setShowModal, selectedMenu}) => {
       showModal ? 
         <animated.div style={animation}>
           <div className={styles.modal} >
-            {selectedMenu}
-            <button className="toggle-button" onClick={() => setShowModal(prev => !prev)} >
-              close
-            </button>
+            {children}
           </div>
-      </animated.div> 
+      </animated.div>
       : null
     }
   </>
