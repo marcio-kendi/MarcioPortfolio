@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        Made by MKI®
+        Made by Márcio Iwamoto®
       </footer>
     </div>
   )
