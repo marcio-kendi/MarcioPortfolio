@@ -3,13 +3,13 @@ import { Modal } from './modal/Modal.js'
 import styles from '../styles/Home.module.scss'
 
 import TechnicalSkills from '../content/TechnicalSkills'
-import WorkExperience from '../content/WorkExperience'
+import WorkExp from '../content/WorkExperience'
 import Education from '../content/Education'
 import Hobbies from '../content/Hobbies'
 
 const content = {
   technical: TechnicalSkills,
-  experience: WorkExperience,
+  experience: WorkExp,
   education: Education,
   hobbies: Hobbies,
 }

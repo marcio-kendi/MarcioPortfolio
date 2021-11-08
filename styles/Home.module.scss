@@ -202,7 +202,10 @@ $light-color: #afafaf;
     padding: 5px 100px;
     margin: auto;
   }
-
+  .carouselRoot {
+    width: 40vw;
+    padding: 0 60px 0 0;
+  }
   @media (max-width: 1200px) {
     width: 80vw;
     left: 10vw;
@@ -210,6 +213,10 @@ $light-color: #afafaf;
   @media (max-width: 768px) {
     width: 90vw;
     left: 5vw;
+    .carouselRoot {
+      width: 90vw;
+      padding: 0 10vw 0 0;
+    }
   }
   @media (max-width: 480px) {
     width: 98vw;
@@ -224,10 +231,12 @@ $light-color: #afafaf;
 
 .menu {
   padding-bottom: 30px;
+  text-align: left;
   :after{
     border:0px;
   }
 }
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
