@@ -31,9 +31,9 @@ const Menu = () => {
 
   return (
     <div className="row">
-      <Button onClick={() => { setContentName('technical') }} menuName={'Technical Skills'} />
+      <Button onClick={() => { setContentName('technical')}} menuName={'Technical Skills'} />
       <Button onClick={() => { setContentName('experience') }} menuName={'Work experience'} />
-      <Button onClick={() => { setContentName('education') }} menuName={'Education'} />
+      <Button onClick={() => { setContentName('education')}} menuName={'Education'} />
       <Button onClick={() => { setContentName('hobbies') }} menuName={'Hobbies'} />
       <Modal showModal={Boolean(Content)}>
           <Content />
