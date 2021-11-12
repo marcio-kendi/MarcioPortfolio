@@ -7,8 +7,9 @@ const Navbar = ({openMenu}) => {
         config: {
             duration: 100   
         },
-        opacity: openMenu ? 1 : 0,
         transform: openMenu ? 'scale(1)' : 'scale(0.6)',
+        display: openMenu ? 'flex' : 'none',
+        zIndex: openMenu ? '1' : '0',
     })
 
     return ( 

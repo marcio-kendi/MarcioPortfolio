@@ -4,9 +4,30 @@ import Title from '../components/Title.js'
 import Menu from '../components/Menu.js'
 import Navbar from '../components/Nav'
 import React from 'react';
+import {useSpring, animated} from 'react-spring'
 
 export default function Home() {
   const [openMenu, setOpenMenu] = React.useState(false);
+  const burgerAnimation1 = useSpring ({
+      config: {
+          duration: 100   
+      },
+      transform: openMenu ? 'rotate(45deg)' : 'rotate(0deg)',
+      top: openMenu ? '24px' : '18px',
+  })
+  const burgerAnimation3 = useSpring ({
+      config: {
+          duration: 100   
+      },
+      opacity: openMenu ? '0' : '1',
+  })
+  const burgerAnimation2 = useSpring ({
+      config: {
+          duration: 100   
+      },
+      transform: openMenu ? 'rotate(-45deg)' : 'rotate(0deg)',
+      bottom: openMenu ? '24px' : '16px',
+  })
 
   return (
     <div className='container-fluid'>
@@ -17,7 +38,9 @@ export default function Home() {
       </Head>
       <Navbar openMenu={openMenu} />
       <button className={styles.menuBtn} onClick={() => setOpenMenu(prev => !prev)}>
-        <span></span>
+        <animated.span style={burgerAnimation1}></animated.span>
+        <animated.span style={burgerAnimation3}></animated.span>
+        <animated.span style={burgerAnimation2}></animated.span>
       </button>
       <main className={[styles.main]}>
         <Title tname="Marcio's portfolio" />

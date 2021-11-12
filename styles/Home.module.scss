@@ -253,42 +253,43 @@ $font-large: 32px;
   border: 0;
   width: 50px;
   height: 50px;
+  z-index: 2;
 
-  span {
-    position: relative;
+  span:nth-child(2) {
+    position: absolute;
     left: 25%;
     width: 50%;
     height: 2px;
     background: #FCFCFC;
-    position: absolute;
     transition: 0.5s;
   }
-  span::before {
-    content: '';
-    top: -7px;
-    left: 0;
-    width: 100%;
+  span:nth-child(1) {
+    position: absolute;
+    left: 25%;
+    width: 50%;
     height: 2px;
     background: #FCFCFC;
-    position: absolute;
     transition: 0.5s;
+    top: 18px;
   }
-  span::after {
-    content: '';
-    top: 7px;
-    left: 0;
-    width: 100%;
+  span:nth-child(3) {
+    position: absolute;
+    bottom: 16px;
+    left: 25%;
+    width: 50%;
     height: 2px;
     background: #FCFCFC;
-    position: absolute;
     transition: 0.5s;
   }
-  
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .menuBtn {
+    top: 20px;
+    left: 20px;
   }
 }
