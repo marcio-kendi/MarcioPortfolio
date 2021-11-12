@@ -1,0 +1,42 @@
+$primary-color: #992cc4;
+$dark-color: #000000;
+$light-color: #afafaf;
+$white-color: #ffffff;
+$dark-color-transparent: #ffffffd1;
+$font-small: 11px;
+$font-medium: 20px;
+$font-large: 32px;
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-color-transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.4 ease-out;
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li{
+            list-style: none;
+            cursor: pointer;
+
+            button {
+                border: none;
+                background-color: transparent;
+                font-size: $font-large;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+}
