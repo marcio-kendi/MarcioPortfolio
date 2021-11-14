@@ -289,7 +289,9 @@ $font-large: 32px;
     flex-direction: column;
   }
   .menuBtn {
-    top: 14px;
-    left: 14px;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px;
+    width: 40px;
   }
 }
