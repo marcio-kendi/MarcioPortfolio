@@ -1,11 +1,11 @@
 import React from 'react';
-import { Modal } from './modal/Modal.js'
-import styles from '../styles/Home.module.scss'
+import { Modal } from '../modal/Modal'
+import styles from '../../styles/Home.module.scss'
 
-import TechnicalSkills from '../content/TechnicalSkills'
-import WorkExp from '../content/WorkExperience'
-import Education from '../content/Education'
-import Hobbies from '../content/Hobbies'
+import TechnicalSkills from '../../content/TechnicalSkills'
+import WorkExp from '../../content/WorkExperience'
+import Education from '../../content/Education'
+import Hobbies from '../../content/Hobbies'
 
 const content = {
   technical: TechnicalSkills,

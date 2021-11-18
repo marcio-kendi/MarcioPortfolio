@@ -1,10 +1,9 @@
 import React from 'react';
-import { Modal } from './modal/Modal.js'
 import styles from '../styles/Home.module.scss'
 
-import Menu from './CV'
-import Work from './Work'
-import Contact from './ContactForm'
+import Menu from './burger/CV'
+import Work from './burger/Work'
+import Contact from './burger/ContactForm'
 
 const content = {
   cv: Menu,
