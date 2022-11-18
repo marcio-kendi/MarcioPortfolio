@@ -15,7 +15,7 @@ class Techskills extends Component {
         <div className={styles.small}>
           <h2>Technical Skills</h2>
           <hr />
-          <div className={styles.grid2}>
+          <div className={styles.grid2}> 
             <div>
               <Frontend />
               <Backend />
