@@ -4,10 +4,10 @@ import React, { Component } from "react";
 class Hobbies extends Component {
   render() {
     return (
-      <div className={styles.small}>
+      <div className={(styles.small)}>
         <h2>Hobbies</h2>
         <hr />
-        <div className="pb-3">
+        <div className="pb-5">
           <h4>Bodybuilding</h4>
           <ul>
             <li>🏆 Mr. Wellington 2022</li>
