@@ -1,48 +1,36 @@
-import styles from '../styles/Home.module.scss'
-import React, { Component } from 'react';
+import styles from "../styles/Home.module.scss";
+import React, { Component } from "react";
+import Frontend from "./Skills/frontend";
+import Backend from "./Skills/backend";
+import Libraries from "./Skills/libraries";
+import Tools from "./Skills/tools";
+import SrcControl from "./Skills/sourcecontrol";
+import Design from "./Skills/design";
+import Extras from "./Skills/extras";
 
 class Techskills extends Component {
   render() {
     return (
-    <div className={styles.menu}>
-        <h2>Technical Skills</h2>
-        <hr/>
-        <div className="pb-3">
-          <h4>Frontend</h4>
-          <ul>
-              <li>- HTML5</li>
-              <li>- CSS (including transitions and animation)</li>
-              <li>- JavaScript</li>
-          </ul>
+      <div className={styles.menu}>
+        <div className={styles.small}>
+          <h2>Technical Skills</h2>
+          <hr />
+          <div className={styles.grid2}>
+            <div>
+              <Frontend />
+              <Backend />
+              <Libraries />
+              <SrcControl />
+            </div>
+            <div>
+              <Tools />
+              <Design />
+              <Extras />
+            </div>
+          </div>
         </div>
-        <div className="pb-3">
-          <h4>Libraries</h4>
-          <ul>
-              <li>- JQuery</li>
-              <li>- Bootstrap</li>
-              <li>- Greensock</li>
-              <li>- SASS</li>
-              <li>- React</li>
-          </ul>
-        </div>
-        <div className="pb-3">
-          <h4>Tools</h4>
-          <ul>
-              <li>- npm</li>
-              <li>- Git</li>
-              <li>- Webpack</li>
-          </ul>
-        </div>
-        <div className="pb-3">
-          <h4>Extras</h4>
-          <ul>
-              <li>- EMV Transaction</li>
-              <li>- EFTPOS</li>
-              <li>- Dynamic Digital Billboard</li>
-          </ul>
-        </div>
-    </div>
-    )
+      </div>
+    );
   }
 }
 export default Techskills;
