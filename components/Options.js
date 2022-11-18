@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../styles/Home.module.scss";
 
 import Menu from "./burger/CV";
 import Work from "./burger/Work";
-import Contact from "./burger/ContactForm";
+import Contact from "./burger/Contact";
 
 const content = {
   cv: Menu,
@@ -12,7 +11,6 @@ const content = {
 };
 
 const Options = ({ selection }) => {
-  // const [openSelection, setOpenSelection] = React.useState(0);
 
   let Content = content[null];
   if (!selection) {

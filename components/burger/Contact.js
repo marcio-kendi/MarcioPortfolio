@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import styles from "../../styles/Home.module.scss";
 import { Modal } from "../modal/Modal";
 
 const Contact = () => {
