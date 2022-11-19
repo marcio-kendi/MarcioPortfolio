@@ -16,19 +16,19 @@ const Contact = () => {
         <div style={contactDiv}>
           <div>
             <span>
-              <a href="mailto:kendi_marcio@hotmail.com">Email</a>
+              <a href="mailto:kendi_marcio@hotmail.com" id="email">Email</a>
             </span>
             <br />
             <span>
-              <a href="tel:0278871721">Phone number</a>
+              <a href="tel:0278871721" id="phnumber">Phone number</a>
             </span>
             <br />
             <span>
-              <a href="https://www.linkedin.com/in/marciokendi/">Linkedin</a>
+              <a href="https://www.linkedin.com/in/marciokendi/" id="linkedin">Linkedin</a>
             </span>
             <br />
             <span>
-              <a href="https://github.com/marcio-kendi">GitHub</a>
+              <a href="https://github.com/marcio-kendi" id="github">GitHub</a>
             </span>
           </div>
           <div>

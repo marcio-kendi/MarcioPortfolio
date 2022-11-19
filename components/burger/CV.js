@@ -14,9 +14,9 @@ const content = {
   hobbies: Hobbies,
 }
 
-const Button = ({onClick, menuName}) => {
+const Button = ({onClick, menuName, dataId}) => {
   return (
-    <span className={['col-12 col-md-3 mt-md-0 mt-3 text-center']} onClick={onClick}>
+    <span className={['col-12 col-md-3 mt-md-0 mt-3 text-center']} onClick={onClick} id={dataId}>
       <span className={styles.btn}>
         <h3>{menuName}</h3>
       </span>
@@ -31,13 +31,13 @@ const Menu = () => {
 
   return (
     <div className="row">
-      <Button onClick={() => { setContentName('technical')}} menuName={'Technical Skills'} />
-      <Button onClick={() => { setContentName('experience') }} menuName={'Work experience'} />
-      <Button onClick={() => { setContentName('education')}} menuName={'Education'} />
-      <Button onClick={() => { setContentName('hobbies') }} menuName={'Hobbies'} />
+      <Button onClick={() => { setContentName('technical')}} menuName={'Technical Skills'} dataId={'technical'} />
+      <Button onClick={() => { setContentName('experience') }} menuName={'Work experience'} dataId={'experience'} />
+      <Button onClick={() => { setContentName('education')}} menuName={'Education'} dataId={'education'} />
+      <Button onClick={() => { setContentName('hobbies') }} menuName={'Hobbies'} dataId={'hobbies'} />
       <Modal showModal={Boolean(Content)}>
           <Content />
-          <button onClick={() => setContentName('')} >
+          <button onClick={() => setContentName('')} id="closeBtn" >
             close
           </button>
       </Modal>

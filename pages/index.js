@@ -67,7 +67,7 @@ export default function Home() {
       <main className={[styles.main]}>
         <Title tname="Márcio's portfolio" />
         <span className="mt-4">
-          [<a href="https://github.com/marcio-kendi" className={styles.defaultLink}>
+          [<a href="https://github.com/marcio-kendi" className={styles.defaultLink} id="homeGithub">
             github.com/marcio-kendi
           </a>]
         </span>
