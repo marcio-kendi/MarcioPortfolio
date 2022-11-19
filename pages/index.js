@@ -58,6 +58,7 @@ export default function Home() {
       <button
         className={styles.menuBtn}
         onClick={() => setOpenMenu((prev) => !prev)}
+        id="burgerMenu"
       >
         <animated.span style={burgerAnimation1}></animated.span>
         <animated.span style={burgerAnimation3}></animated.span>
